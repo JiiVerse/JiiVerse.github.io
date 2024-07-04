@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jii Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Example of linking an external JavaScript file -->
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="images/logo-1.png" alt="Phones"></div>
+            
+            <!-- Hamburger menu toggle button -->
+            <button class="menu-toggle">&#9776;</button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                </ul>
+            </nav>
+           
+            <div class="cta-buttons">
+            </div>
+        </div>
+    </header>        
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Revolutionize Your Business Connections</h1>
+                <h2>Connecting Manufacturers, Dealers, Laborers, and Bulk Purchasers Effortlessly.</h2>
+                <p>Join us and experience a seamless, all-inclusive platform that brings together manufacturers, dealers, labourers, and customers to meet all your business needs.</p>
+                
+                <button class="open-button">Join Waitlist</button>
+
+                <div id="overlay" class="overlay"></div>
+
+                <div class="form-popup" id="myForm">
+                <div id="form-img"><img src="images/new-logo.png" alt="Phones"></div>
+                <form action="/action_page.php" class="form-container">
+                    <h2>Join Waitlist</h2>
+                    <div class="form-field">
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" placeholder="Enter Name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact"><b>Contact:</b></label>
+                        <input type="text" placeholder="Enter Contact" name="contact" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="group"><b>Group:</b></label>
+                        <select id="group" name="group" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="manufacturer">Manufacturer</option>
+                            <option value="dealer">Dealer</option>
+                            <option value="worker">Worker</option>
+                            <option value="customer">Customer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <button type="submit" class="btn">Join</button>
+                        <button type="button" class="btn cancel">Close</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/overview.png" alt="Phones">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="images/manufacturer_icon.png" alt="Mission Image">
+                <h2>Manufacturers</h2>
+                <p>Easily find reliable dealers to distribute your products and expand your market reach.</p>
+                <a href="#manufacturers">More info</a>
+            </div>
+            <div class="feature">
+                <img src="images/dealer_icon.png" alt="Mission Image">
+                <h2>Dealers</h2>
+                <p>Access a wide range of manufacturers and products to enhance your inventory and meet customer demands.</p>
+                <a href="#dealers">More info</a>
+            </div>
+            <div class="feature">
+                <img src="images/worker_icon.png" alt="Mission Image">
+                <h2>Workers</h2>
+                <p>Create a profile, showcase your skills, and connect with manufacturers looking to hire skilled labor.</p>
+                <a href="#workers">More info</a>
+            </div>
+            <div class="feature">
+                <img src="images/customer_icon.png" alt="Mission Image">
+                <h2>Customers</h2>
+                <p>Purchase products in bulk directly from manufacturers or dealers, ensuring quality and competitive pricing.</p>
+                <a href="#customers">More info</a>
+            </div>
+        </div>
+    </section>
+    <section class="mission" id="mission">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-image">
+                    <img src="images/mission-1.png" alt="Mission Image">
+                </div>
+                <div class="mission-text">
+                    <div class="mission-box">
+                        <h2>Our Mission</h2>
+                        <h3>Empowering Connections, Enhancing Commerce</h3>
+                        <p>Our mission is to create an efficient, secure, and user-friendly platform that bridges the gap between manufacturers, dealers, laborers, and customers. We aim to simplify business connections, foster opportunities for all parties involved, and enhance the overall commerce experience through innovative solutions and seamless interactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="sections">
+        <div class="container">
+            <div class="section" id="manufacturers">
+                <div class="user-text">
+                    <h2>Manufacturers</h2>
+                    <div class="box">
+                        <img src="images/inventory.png" alt="Image 1">
+                        <p>Inventory Management</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/notification-enquiry.png" alt="Image 2">
+                        <p>Dealer Enquiries</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/review-feedback.png" alt="Image 4">
+                        <p>Feedback & Review</p>
+                    </div>
+                    <div class="box-row-3">
+                        <div class="box">
+                            <img src="images/messaging.png" alt="Image 3">
+                            <p>Communicate seamlessly</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/employees.png" alt="Image 4">
+                            <p>Find Workers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-img">
+                    <img src="images/manufacturers.png" alt="Mission Image">
+                </div>
+            </div>
+            <div class="section" id="dealers">
+                <div class="user-text">
+                    <h2>Dealers</h2>
+                    <div class="box">
+                        <img src="images/material-management.png" alt="Image 1">
+                        <p>Manage inventory</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/manufacturer_icon.png" alt="Image 2">
+                        <p>Find Manufacturers</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/notification.png" alt="Image 3">
+                        <p>Customized Notifications</p>
+                    </div>
+                    <div class="box-row-3">
+                        <div class="box">
+                            <img src="images/conversation.png" alt="Image 4">
+                            <p>Initiate Enquiry</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/feedback.png" alt="Image 4">
+                            <p>Feedback & Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-img">
+                    <img src="images/dealers.png" alt="Mission Image">
+                </div>
+            </div>
+            <div class="section" id="workers">
+                <div class="user-text">
+                    <h2>Workers</h2>
+                    <div class="box">
+                        <img src="images/deadline.png" alt="Image 1">
+                        <p>Prefered Working Hours</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/toggle.png" alt="Image 2">
+                        <p>Toggle Availability</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/document.png" alt="Image 3">
+                        <p>Job Alert!</p>
+                    </div>
+                    <div class="box-row-3">
+                        <div class="box">
+                            <img src="images/web-browser.png" alt="Image 4">
+                            <p>Apply for jobs</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/rating.png" alt="Image 4">
+                            <p>Receive Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-img">
+                    <img src="images/workers.png" alt="Mission Image">
+                </div>
+            </div>
+            <div class="section" id="customers">
+                <div class="user-text">
+                    <h2>Customers</h2>
+                    <div class="box">
+                        <img src="images/search-product.png" alt="Image 1">
+                        <p>Browse Products</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/order-history.png" alt="Image 2">
+                        <p>Order Tracking</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/wishlist.png" alt="Image 3">
+                        <p>wishlist</p>
+                    </div>
+                    <div class="box-row-3">
+                        <div class="box">
+                            <img src="images/worker-1.png" alt="Image 4">
+                            <p>Find Skilled Workers</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/feedback.png" alt="Image 4">
+                            <p>Review & Feedback</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-img">
+                    <img src="images/customers.png" alt="Mission Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Jii App is dedicated to transforming business connections in the B2B sector. Our platform bridges the gap between manufacturers, dealers, laborers, and bulk purchasers, providing a seamless and efficient connection process. <br>Team: Meet our dedicated team of professionals committed to making Jii App the best platform for B2B connections.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about_us.png" alt="Mission Image">
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="faqs" id="faqs">
+        <div class="container">
+            <h2>FAQs</h2>
+            <div class="faq-content">
+                <div class="faq-image">
+                    <img src="images/faq.png" alt="FAQ Image">
+                </div>
+                <div class="faq-text">
+                    <div class="faq-grid">
+                        <div class="faq">
+                            <div class="faq-question">
+                                <h3>Q: What is Jii App?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>-> Jii App is a platform that bridges the gap between manufacturers, dealers, laborers, and bulk purchasers, providing a seamless and efficient connection process.</p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="faq-question">
+                                <h3>Q: How can I join the waitlist?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>-> You can join the waitlist by clicking the "Join Waitlist" button located in the header or hero section of our website.</p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="faq-question">
+                                <h3>Q: Is Jii App available for download?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>-> Jii App will be available for download soon. Stay tuned for updates!</p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="faq-question">
+                                <h3>Q: How does Jii App enhance business connections?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>-> Jii App provides an efficient, secure, and user-friendly platform that simplifies business connections and enhances opportunities for all parties involved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <p>Panaji, Goa</p>
+                <p><a href="mailto:jii.support@gmail.com">jii.support@gmail.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>SUPPORT</h3>
+                <p>Our support team is available around the clock to address any concerns or queries you may have.</p>
+                <p>Support email coming soon..</p>
+            </div>
+            <div class="footer-section">
+                <h3>FEEDBACK</h3>
+                <p>We value your feedback and are continuously working to improve Jii. Your input is crucial in shaping the future of Jii.</p>
+                <a href="#">Give Feedback</a>
+            </div>
+            <div class="footer-section">
+                <h3>SUBSCRIBE</h3>
+                <p><a href="#">YouTube</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+            </div>
+        </div>
+        <hr>
+        <p>@ 2024 copyright by Jii. All Rights Reserved.</p>
+    </footer>   
+</body>
+</html>
